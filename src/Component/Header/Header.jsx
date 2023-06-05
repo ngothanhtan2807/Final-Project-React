@@ -34,7 +34,7 @@ const Header = () => {
             <div className="search"><img src={search} alt="" /></div>
             <div className="logo">Lisa Store</div>
             <div className="icon">
-                <span><a><img src={account} alt="" />Account</a></span>
+                <span><img src={account} alt="" />Account</span>
                 <span><img src={shoping} alt="" />Shoping</span>
             </div>
         </HeaderStyled>
