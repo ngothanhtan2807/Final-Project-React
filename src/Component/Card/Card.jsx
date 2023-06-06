@@ -3,12 +3,12 @@ import styled from "styled-components"
 const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
-    width: 312px;
-    height: 450px;
+    width: 300px;
+    /* height: 60vh; */
     /* background-color: aqua; */
     .imageProduct{
-        width: 312px;
-        height: 400px;
+        width: 100%;
+        /* height: 400px; */
     }
     .nameProduct{
         width: 100%;

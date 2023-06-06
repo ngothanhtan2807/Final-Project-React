@@ -9,6 +9,7 @@ const ListProductStyled = styled.div`
     flex-direction: column;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-bottom: 5vh;
     .titleListProduct{
         font-family: 'Roboto';
         font-style: normal;
@@ -58,7 +59,8 @@ const ListProductStyled = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 3vw;
+        gap: 1vw;
+        
     }
 
 `

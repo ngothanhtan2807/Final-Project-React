@@ -2,7 +2,10 @@ import { Footer } from "Component/Footer"
 import { Header } from "Component/Header"
 import styled from "styled-components"
 const LayoutStyled = styled.div`
-    display: block;
+    body{display: block;
+    margin: 0;
+    padding: 0;}
+    
 `
 const Layout = ({children})=>{
 

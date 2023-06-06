@@ -19,10 +19,15 @@ const HeaderStyled = styled.div`
     }
     .icon{
         span{
+            font-size: 18px;
             padding-right: 1vw;
             align-items: center;
             justify-content: center;
             vertical-align: middle;
+            img{
+                padding-right: 0.8vw;
+                width: 16px;
+            }
         }
     }
 

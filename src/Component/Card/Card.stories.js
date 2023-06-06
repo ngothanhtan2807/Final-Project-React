@@ -2,7 +2,7 @@ import { Card } from "./Card";
 import image1 from "Assets/image-product-3.svg"
 
 export default {
-    title: "Example/Buttion",
+    title: "Example/Card",
     component: Card,
     tags: ['autodocs'],
     argTypes: {
