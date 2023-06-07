@@ -20,11 +20,12 @@ const StyleButton = styled.button`
     align-items: center;
     img {
     margin-right: 8px;
+    width: ${props=>`${props.widthIcon}px`}
      }
      
 `;
 
-export const Button = ({ percent, label, icon, ffamily, children, width, height, textColor, bgColor, borderColor, bradius, fontSize, ...res }) => {
+export const Button = ({ percent, label, icon, widthIcon, ffamily, children, width, height, textColor, bgColor, borderColor, bradius, fontSize, ...res }) => {
 
 
     return <StyleButton
@@ -40,6 +41,7 @@ export const Button = ({ percent, label, icon, ffamily, children, width, height,
         ffamily={ffamily}
         // children={children}
         icon={icon}
+        widthIcon={widthIcon}
         {...res} >
 
         <img src={icon} /> {label}

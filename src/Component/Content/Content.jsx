@@ -160,7 +160,8 @@ const ContentStyled = styled.div`
         }
         .popular-image{
             img{
-                height: 43vw;
+                width: 43vw;
+                /* height: 43vw; */
             }
         }
         .popular-list-image{
