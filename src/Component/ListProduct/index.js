@@ -1,2 +1,3 @@
 import { ListProduct } from "./ListProduct";
-export {ListProduct};
+import { ListBestSeller } from "./ListBestSeller";
+export {ListProduct, ListBestSeller};

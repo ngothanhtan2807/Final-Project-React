@@ -3,28 +3,57 @@ import image from 'Assets/image-product-12.svg'
 import styled from "styled-components"
 
 const FollowStyled = styled.div`
+    width: 100vw;
+    background: #F0F0F0;
     display: flex;
     flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
+    justify-content: center;
+    align-items: center;
    .titleFollow{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 59px;
-/* identical to box height */
-
-text-align: center;
-text-transform: capitalize;
-
-/* Dark */
-
-color: #000000;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 59px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #000000;
    } 
    .listItemFollow{
-    display: flex;
-    justify-content: space-between;
+       display: flex;
+        /* padding-right: 2vw; */
+   }
+   /* .listItemFollow:not(:last-child){
+        padding-right: 1vw;
+        
+   } */
+   .follow-persion{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        padding-top: 4vh;
+        padding-bottom: 6vh;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: capitalize;
+
+        /* Primary */
+
+        color: #FF6F61;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
    }
 `
 const Follow = ()=>{
@@ -38,6 +67,9 @@ const Follow = ()=>{
                 <ItemFollow image={image}></ItemFollow>
                 <ItemFollow image={image}></ItemFollow>
                 <ItemFollow image={image}></ItemFollow>
+             </div>
+             <div className="follow-persion">
+             @lisa.official
              </div>
         </FollowStyled>
     )

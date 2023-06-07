@@ -5,6 +5,7 @@ const StyleButton = styled.button`
         :hover{
         background-color:#FF6F61;
      }
+     text-align: center;
     width: ${props => `${props.width}px`};
     height: ${props => `${props.height}px`};
     border: 1px solid ${props => props.borderColor};
@@ -52,4 +53,5 @@ Button.defaultProps = {
     fontSize: 16,
     bradius: 12,
     borderColor: 'black',
+    
 };

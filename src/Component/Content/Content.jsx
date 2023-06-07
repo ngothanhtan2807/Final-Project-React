@@ -14,10 +14,13 @@ import plist1 from "Assets/item-category-hover 1.svg"
 import plist2 from "Assets/item-category-2.svg"
 import plist3 from "Assets/item-category-1.svg"
 import plist4 from "Assets/item-category.svg"
-import { ListProduct } from "Component/ListProduct";
+import { ListBestSeller, ListProduct } from "Component/ListProduct";
 import bannerzara from "Assets/andrey-zvyagintsev-EQj1ZMpq_VM-unsplash 1.svg"
 import logo10241 from "Assets/1024px-Zara_Logo 1.svg"
 import logo10242 from "Assets/1024px-Zara_Logo 2.svg"
+import { SliderComponent } from "Component/SliderComponent";
+import { Follow } from "Component/Follow";
+import { FooterComponent } from "Component/Footer";
 const ContentStyled = styled.div`
     display: flex;
     flex-direction: column;
@@ -30,7 +33,7 @@ const ContentStyled = styled.div`
         background-color: #F0F0F0;
        /* justify-content: center; */
         align-items: center;
-        border: 1px solid blue;
+        border: 1px solid #E3E3E3;
     }
     .topBanner{
         width: 100%;
@@ -99,14 +102,14 @@ const ContentStyled = styled.div`
         .rightImageBnLeft{
             margin-top: 10vh;
             margin-left: 3vw;
-            width: 26vw;
-            height: 65vh;
+            width: 350px;
+            height: 446px;
             left: 1102px;
             top: 245px;
             border: 2px solid rgba(0, 0, 0, 0.25);
             border-radius: 160px 0px;
             img{
-               height: 100%;
+               width: 350px;
             /* height: 65vh;  */
             border: 2px solid rgba(0, 0, 0, 0.25);
             border-radius: 160px 0px;
@@ -218,6 +221,57 @@ const ContentStyled = styled.div`
     .btn-banner-zara{
         padding-left: 7vw;
     }
+    .best-seller{
+        display: flex;
+        width: 100vw;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    padding-top: 4vh;
+    .best-seller-content{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 59px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: capitalize;
+        color: #000000;
+    }
+   
+    }
+  
+    .best-seller-menu{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            padding-left: 0;
+            display: flex;
+        }
+        li{
+            :first-child{
+                color: #000000;
+
+            }
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-transform: capitalize;
+
+            /* Dark */
+
+            color: rgba(0, 0, 0, 0.5);
+            padding-right: 3vw;
+            list-style: none;
+        }
+    }
 `
 const Content = () => {
     return (
@@ -283,8 +337,8 @@ const Content = () => {
                 <img className="background-image" src={bannerzara} alt="" />
                 <div className="content-banner-zara">
                     <div>
-                        <img  className ="zara-img1" src={logo10241} alt="" />
-                        <img className ="zara-img2" src={logo10242} alt="" />
+                        <img className="zara-img1" src={logo10241} alt="" />
+                        <img className="zara-img2" src={logo10242} alt="" />
                     </div>
                     <div className="title-banner-zara">
                         Lustrous yet understated. The new evening wear collection exclusively offered at the reopened Giorgio Armani boutique in Los Angeles.
@@ -295,15 +349,18 @@ const Content = () => {
                             height={72}
                             textColor="#1E2832"
                             bgColor="#FFFFFF"
-                            bradius= {0}
+                            bradius={0}
                             borderColor='#FFFFFF'
-                            
+
                             fontSize={29}
                             ffamily='Roboto'></Button>
                     </div>
                 </div>
             </div>
-            <div></div>
+            <ListBestSeller></ListBestSeller>
+
+            <Follow></Follow>
+
         </ContentStyled>
     )
 }

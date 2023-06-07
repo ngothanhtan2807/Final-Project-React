@@ -5,6 +5,7 @@ const ItemStyled = styled.div`
     width: 180px;
     display: flex;
     height: 180px;
+    margin: 1vw;
     justify-content: center;
     align-items: center;
     z-index: 1;

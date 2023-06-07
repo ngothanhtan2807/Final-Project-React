@@ -1,33 +1,54 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import image1 from "Assets/image-product-3.svg"
+
+import Carousel from 'Component/Carousel/Carousel';
 import { Card } from 'Component/Card';
- const SliderComponent =()=> {
-   
-        return (
-            <Carousel >
-                <div>
+import image1 from "Assets/image-product-3.svg"
+const SliderComponent = () => {
+
+    return (
+
+        <div style={{ maxWidth: 80 +"vw", marginLeft: 'auto', marginRight: 'auto', marginTop: 1+'vh' }}>
+        <Carousel
+            show={4}
+        >
+            <div>
+                <div style={{padding: 1+'vw'}}>
                 <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card>
+
                 </div>
-                <div>
+            </div>
+            <div>
+                <div style={{padding: 1+'vw'}}>
                 <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card>
+
                 </div>
-                <div>
+            </div>
+            <div>
+                <div style={{padding: 1+'vw'}}>
                 <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card>
+
                 </div>
-                <div>
+            </div>
+            <div>
+                <div style={{padding: 1+'vw'}}>
                 <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card>
+
                 </div>
-                <div>
+            </div>
+            <div>
+                <div style={{padding: 1+'vw'}}>
                 <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card>
+
                 </div>
-                <div>
+            </div>
+            <div>
+                <div style={{padding: 1+'vw'}}>
                 <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card>
+
                 </div>
-            </Carousel>
+            </div>
+        </Carousel>
+    </div>
         );
-    
+
 };
-  export {SliderComponent}
+export { SliderComponent }
