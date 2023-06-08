@@ -80,12 +80,12 @@ const ListProduct = () => {
                 </div>
                 <div>
                     <Button label='Filter' width={113} height={46} textColor='white' fontSize={16}
-                        bgColor='#1E2832' bradius={40} borderColor='#FFFFFF' icon={filter}></Button>
+                        bgColor='#1E2832' bradius={0} borderColor='#FFFFFF' icon={filter}></Button>
                 </div>
             </div>
             <div className="listProduct">
-               <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card> 
-               <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card> 
+               <Card isHot={true} image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card> 
+               <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" salePrice={50} price = {63.85}></Card> 
                <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card> 
                <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card> 
                <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card> 

@@ -6,12 +6,12 @@ const SliderComponent = () => {
 
     return (
 
-        <div style={{ maxWidth: 80 +"vw", marginLeft: 'auto', marginRight: 'auto', marginTop: 1+'vh' }}>
+        <div style={{ maxWidth: 90 +"vw", marginLeft: 'auto', marginRight:0+ 'vw', marginTop: 1+'vh' }}>
         <Carousel
             show={4}
         >
             <div>
-                <div style={{padding: 1+'vw'}}>
+                <div style={{padding: 0.5+'vw'}}>
                 <Card image = {image1} name ="Nike Sportswear Futura Luxe" category="Dress" price = {63.85}></Card>
 
                 </div>
