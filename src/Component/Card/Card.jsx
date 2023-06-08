@@ -6,7 +6,7 @@ import search from "Assets/search (2).svg"
 const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 21vw;
     /* height: 60vh; */
     /* background-color: aqua; */
     .imageProduct{
