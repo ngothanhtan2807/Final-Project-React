@@ -18,6 +18,7 @@ const StyleButton = styled.button`
      background: ${props => props.bgColor};
      justify-content: center;
     align-items: center;
+    display: flex;
     img {
     margin-right: 8px;
     width: ${props=>`${props.widthIcon}px`}

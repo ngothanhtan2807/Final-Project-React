@@ -1,4 +1,4 @@
-import { FileOutlined, PieChartOutlined, UserOutlined } from '@ant-design/icons';
+import { FileOutlined, PieChartOutlined, UserOutlined, DropboxCircleFilled,DesktopOutlined, TeamOutlined} from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { useState } from 'react';
 const { Header, Content, Footer, Sider } = Layout;
@@ -11,7 +11,7 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem('Option 1', '1', <PieChartOutlined />),
+  getItem('Dashboard', '1', <DropboxCircleFilled/>),
   getItem('Option 2', '2', <DesktopOutlined />),
     getItem('Tom', '3'),
     getItem('Bill', '4'),
@@ -41,7 +41,9 @@ const LayoutAdmin = () => {
             padding: 0,
             background: colorBgContainer,
           }}
-        />
+        >
+            abc
+        </Header>
         <Content
           style={{
             margin: '0 16px',
@@ -76,4 +78,4 @@ const LayoutAdmin = () => {
     </Layout>
   );
 };
-export default LayoutAdmin;
+export {LayoutAdmin};

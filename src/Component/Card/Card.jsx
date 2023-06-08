@@ -24,18 +24,29 @@ const CardStyled = styled.div`
             width: 100%;
         }
         /* height: 400px; */
-        .hiden-bottom{
-        position: absolute;
+        
+    
+    }
+    .hiden-bottom{
+        /* position: absolute;
         width: 100%;
         height: 40px;
         background-color: #000000;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        transform: translate(0%, 760%);
-       
-    }
-    
+        */
+        position: absolute;
+        /* padding-top: 2vw; */
+        height:40px;
+        display: flex;
+        justify-content: flex-start;
+        bottom:0;
+        width:100%;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .is-hot-product{
         position: absolute;
@@ -118,8 +129,9 @@ const Card = ({ widthCard, image, name, category, price, isHot, salePrice }) => 
         >
             <div className="imageProduct">
                 <img className="prodImage" src={image} alt="" />
-                {isHot ?
+                
                     <div className="is-hot-product">
+                        {isHot ?
                         <Button label='Hot'
                         width={52}
                         height={24}
@@ -128,7 +140,7 @@ const Card = ({ widthCard, image, name, category, price, isHot, salePrice }) => 
                         bradius={0}
                         borderColor='rgba(0,0,0,0)'
                         fontSize={12}
-                        ffamily='Roboto'></Button></div> : salePrice?<div className="is-hot-product"><Button label='Sale'
+                        ffamily='Roboto'></Button> : salePrice?<Button label='Sale'
                         width={52}
                         height={24}
                         textColor="#FFFFFF"
@@ -136,9 +148,9 @@ const Card = ({ widthCard, image, name, category, price, isHot, salePrice }) => 
                         bradius={0}
                         borderColor='rgba(0,0,0,0)'
                         fontSize={12}
-                        ffamily='Roboto'></Button></div>: 
-                    <div className="is-hot-product"></div>
-                }
+                        ffamily='Roboto'></Button>: <div/>}
+                    </div>
+                
                 <div className="hiden-bottom">
                     <div className="left-icon">
                         <div><img src={heart} alt="" /></div>
